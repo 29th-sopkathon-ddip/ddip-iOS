@@ -105,7 +105,9 @@
                                     <constraint firstAttribute="height" constant="98" id="dUx-Xj-anm"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
+                                <buttonConfiguration key="configuration" style="plain" title="띱 하기">
+                                    <fontDescription key="titleFontDescription" name="GmarketSansBold" family="Gmarket Sans" pointSize="0.0"/>
+                                </buttonConfiguration>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Yfm-8X-VGS">
                                 <rect key="frame" x="0.0" y="101" width="414" height="697"/>

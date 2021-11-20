@@ -49,6 +49,10 @@ class DDipDetailVC: BaseViewController {
         detailTableView.backgroundColor = UIColor.black
         
         detailTableView.allowsSelection = false
+        
+        ddipButton.titleLabel?.text = "띱 하기"
+        ddipButton.titleLabel?.font = UIFont.gmarketBoldFont(ofSize: 22)
+        ddipButton.titleLabel?.textColor = .white
     }
     
     override func setupLocalization() {
