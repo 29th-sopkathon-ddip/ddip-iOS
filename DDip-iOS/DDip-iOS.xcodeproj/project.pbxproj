@@ -28,10 +28,12 @@
 		EDE08DA8274934F30057A015 /* FontLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DA7274934F30057A015 /* FontLiteral.swift */; };
 		EDE08DAA274934FA0057A015 /* ColorLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DA9274934FA0057A015 /* ColorLiteral.swift */; };
 		EDE08DAC274935060057A015 /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DAB274935060057A015 /* ImageLiteral.swift */; };
-		EDE08DD0274944FD0057A015 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DCF274944FD0057A015 /* TabbarController.swift */; };
 		EDE08DD527494DB50057A015 /* GmarketSansMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDE08DD227494DB50057A015 /* GmarketSansMedium.otf */; };
 		EDE08DD627494DB50057A015 /* GmarketSansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDE08DD327494DB50057A015 /* GmarketSansLight.otf */; };
 		EDE08DD727494DB50057A015 /* GmarketSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDE08DD427494DB50057A015 /* GmarketSansBold.otf */; };
+		EDE08DDB27495A150057A015 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDA27495A150057A015 /* TabBarController.swift */; };
+		EDE08DDD274969A80057A015 /* CardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDC274969A80057A015 /* CardCVC.swift */; };
+		EDE08DDF274970430057A015 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDE274970430057A015 /* UILabel+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,10 +62,12 @@
 		EDE08DA7274934F30057A015 /* FontLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiteral.swift; sourceTree = "<group>"; };
 		EDE08DA9274934FA0057A015 /* ColorLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLiteral.swift; sourceTree = "<group>"; };
 		EDE08DAB274935060057A015 /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
-		EDE08DCF274944FD0057A015 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		EDE08DD227494DB50057A015 /* GmarketSansMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansMedium.otf; sourceTree = "<group>"; };
 		EDE08DD327494DB50057A015 /* GmarketSansLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansLight.otf; sourceTree = "<group>"; };
 		EDE08DD427494DB50057A015 /* GmarketSansBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansBold.otf; sourceTree = "<group>"; };
+		EDE08DDA27495A150057A015 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EDE08DDC274969A80057A015 /* CardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCVC.swift; sourceTree = "<group>"; };
+		EDE08DDE274970430057A015 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +177,6 @@
 				EDE08D8D27492F4D0057A015 /* DDipListVC.swift */,
 				EDE08D8F27492FBA0057A015 /* DDipDetailVC.swift */,
 				EDE08D9127492FE50057A015 /* DDipCreateVC.swift */,
-				EDE08DCF274944FD0057A015 /* TabbarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 		EDE08D8027492E660057A015 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				EDE08DDC274969A80057A015 /* CardCVC.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -193,6 +197,7 @@
 				EDE08D9E274933F90057A015 /* UIScreen+.swift */,
 				EDE08DA0274934220057A015 /* Encodable+.swift */,
 				EDE08DA2274934810057A015 /* UITextField+.swift */,
+				EDE08DDE274970430057A015 /* UILabel+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				EDE08DA52749349A0057A015 /* BaseViewController.swift */,
+				EDE08DDA27495A150057A015 /* TabBarController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -409,12 +415,13 @@
 			files = (
 				EDE08D8E27492F4D0057A015 /* DDipListVC.swift in Sources */,
 				EDE08DAC274935060057A015 /* ImageLiteral.swift in Sources */,
+				EDE08DDF274970430057A015 /* UILabel+.swift in Sources */,
 				EDE08DA3274934810057A015 /* UITextField+.swift in Sources */,
+				EDE08DDB27495A150057A015 /* TabBarController.swift in Sources */,
 				EDE08D6827492E090057A015 /* AppDelegate.swift in Sources */,
 				EDE08D9D274933E00057A015 /* UIViewController+.swift in Sources */,
 				EDE08DA8274934F30057A015 /* FontLiteral.swift in Sources */,
 				EDE08DA1274934220057A015 /* Encodable+.swift in Sources */,
-				EDE08DD0274944FD0057A015 /* TabbarController.swift in Sources */,
 				EDE08DA62749349A0057A015 /* BaseViewController.swift in Sources */,
 				EDE08D99274933840057A015 /* ClassName+ViewController.swift in Sources */,
 				EDE08D97274933610057A015 /* UICollectionViewRegisterable.swift in Sources */,
@@ -423,6 +430,7 @@
 				EDE08D9F274933F90057A015 /* UIScreen+.swift in Sources */,
 				EDE08D9027492FBA0057A015 /* DDipDetailVC.swift in Sources */,
 				EDE08D9B274933C50057A015 /* UIView+.swift in Sources */,
+				EDE08DDD274969A80057A015 /* CardCVC.swift in Sources */,
 				EDE08D6A27492E090057A015 /* SceneDelegate.swift in Sources */,
 				EDE08D9227492FE50057A015 /* DDipCreateVC.swift in Sources */,
 			);
