@@ -410,6 +410,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="didTappedRegister:" destination="WDr-7j-Wxi" eventType="touchUpInside" id="XVZ-jo-Pd8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jml-Xa-Gpr"/>
