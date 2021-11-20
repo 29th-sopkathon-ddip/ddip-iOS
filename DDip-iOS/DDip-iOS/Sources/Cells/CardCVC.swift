@@ -33,6 +33,13 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
         $0.textColor = .white
         $0.numberOfLines = 0
     }
+    private let personIcon = UIImageView().then {
+        $0.backgroundColor = .yellow
+    }
+    private let ddipCountLabel = UILabel().then {
+        $0.font = .gmarketBoldFont(ofSize: 18)
+        $0.textColor = .white
+    }
     
     // MARK: - Initailzer
     
@@ -50,7 +57,7 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
     
     private func render() {
         addSubviews([imageView, imageButton, ddipButton,
-                    titleLabel])
+                    titleLabel, personIcon, ddipCountLabel])
         
         imageView.snp.makeConstraints {
             $0.width.equalTo(UIScreen.main.bounds.size.width - 66 - 27 - 21)
@@ -73,6 +80,17 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
             $0.leading.equalToSuperview().inset(32)
             $0.trailing.equalToSuperview().inset(32)
         }
+        
+        personIcon.snp.makeConstraints {
+            $0.bottom.equalToSuperview().inset(26)
+            $0.leading.equalToSuperview().inset(23)
+            $0.width.height.equalTo(20)
+        }
+        
+        ddipCountLabel.snp.makeConstraints {
+            $0.top.equalTo(personIcon.snp.top)
+            $0.leading.equalTo(personIcon.snp.trailing).offset(7)
+        }
     }
     
     private func configUI() {
@@ -80,6 +98,8 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
         
         titleLabel.text = "커피 세 병! 띱!"
         titleLabel.addLineSpacing(kernValue: 0, paragraphValue: 22)
+        
+        ddipCountLabel.text = "2/3"
     }
     
     // MARK: - Selector
