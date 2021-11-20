@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tse-fj-U8D">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -7,6 +7,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GmarketSansBold.otf">
+            <string>GmarketSansBold</string>
+        </array>
+        <array key="GmarketSansMedium.otf">
+            <string>GmarketSansMedium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Dip ListVC-->
         <scene sceneID="s0d-6b-0kx">
@@ -59,24 +67,215 @@
                     <view key="view" contentMode="scaleToFill" id="JCZ-yG-Qew">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ai-1R-rTk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="57"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdt-gH-vNS">
+                                        <rect key="frame" x="8" y="13" width="67" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="rah-Ff-Qau"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFK-5i-rJY">
+                                <rect key="frame" x="0.0" y="101" width="414" height="697"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pJr-lq-Unx">
+                                        <rect key="frame" x="45" y="26" width="324" height="210"/>
+                                        <color key="backgroundColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="210" id="3zq-Nn-3dT"/>
+                                            <constraint firstAttribute="width" constant="324" id="jeu-o2-niO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9I-rR-RzI">
+                                        <rect key="frame" x="174" y="115" width="67" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="무엇을 띱하실건가요?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0fK-Op-W0Y">
+                                        <rect key="frame" x="45" y="270" width="211" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="GmarketSansBold" family="Gmarket Sans" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="7o9-hf-PlT">
+                                        <rect key="frame" x="45" y="329.5" width="324" height="124"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="L42-Zz-68S">
+                                                <rect key="frame" x="0.0" y="0.0" width="324" height="39"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공유 장소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iy4-2Z-GIF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="39"/>
+                                                        <fontDescription key="fontDescription" name="GmarketSansBold" family="Gmarket Sans" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="공유할 장소" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q5g-wC-PiH">
+                                                        <rect key="frame" x="100.5" y="0.0" width="223.5" height="39"/>
+                                                        <color key="backgroundColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="39" id="kIT-11-ziq"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="GmarketSansMedium" family="Gmarket Sans" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                <color key="value" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="OTk-u3-lr9">
+                                                <rect key="frame" x="0.0" y="51" width="324" height="39"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOY-0l-DkU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="39"/>
+                                                        <fontDescription key="fontDescription" name="GmarketSansBold" family="Gmarket Sans" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="공유할 시간" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o3m-ma-En3">
+                                                        <rect key="frame" x="100.5" y="0.0" width="223.5" height="39"/>
+                                                        <color key="backgroundColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="39" id="EoF-jj-IYB"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="GmarketSansMedium" family="Gmarket Sans" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                <color key="value" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="172" translatesAutoresizingMaskIntoConstraints="NO" id="cSW-c6-fde">
+                                                <rect key="frame" x="0.0" y="102" width="324" height="22"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QU0-38-Z6U">
+                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="22"/>
+                                                        <fontDescription key="fontDescription" name="GmarketSansBold" family="Gmarket Sans" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="bf0-Xv-xYL">
+                                                        <rect key="frame" x="207" y="0.0" width="117" height="22"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVW-Pt-Ivn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="33" height="22"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="minus.circle.fill" catalog="system"/>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9f-KW-pbG">
+                                                                <rect key="frame" x="42" y="0.0" width="33" height="22"/>
+                                                                <fontDescription key="fontDescription" name="GmarketSansBold" family="Gmarket Sans" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhC-XX-Oyf">
+                                                                <rect key="frame" x="84" y="0.0" width="33" height="22"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="plus.circle.fill" catalog="system"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="lOY-0l-DkU" firstAttribute="trailing" secondItem="iy4-2Z-GIF" secondAttribute="trailing" id="ooH-Jd-uYC"/>
+                                        </constraints>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t7n-xA-XM8">
+                                        <rect key="frame" x="45" y="486.5" width="324" height="105"/>
+                                        <color key="backgroundColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="105" id="Okk-Qz-c5n"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pJr-lq-Unx" firstAttribute="top" secondItem="rFK-5i-rJY" secondAttribute="top" constant="26" id="6Yr-7l-oZN"/>
+                                    <constraint firstItem="t7n-xA-XM8" firstAttribute="top" secondItem="7o9-hf-PlT" secondAttribute="bottom" constant="33" id="C2f-VX-hFC"/>
+                                    <constraint firstItem="pJr-lq-Unx" firstAttribute="centerX" secondItem="rFK-5i-rJY" secondAttribute="centerX" id="EH1-HY-ewj"/>
+                                    <constraint firstItem="7o9-hf-PlT" firstAttribute="top" secondItem="0fK-Op-W0Y" secondAttribute="bottom" constant="36" id="INg-lt-drJ"/>
+                                    <constraint firstItem="7o9-hf-PlT" firstAttribute="trailing" secondItem="pJr-lq-Unx" secondAttribute="trailing" id="KeL-fv-1p4"/>
+                                    <constraint firstItem="0fK-Op-W0Y" firstAttribute="top" secondItem="pJr-lq-Unx" secondAttribute="bottom" constant="34" id="Lo0-xm-UEM"/>
+                                    <constraint firstItem="7o9-hf-PlT" firstAttribute="leading" secondItem="pJr-lq-Unx" secondAttribute="leading" id="WGA-XX-iA4"/>
+                                    <constraint firstItem="t7n-xA-XM8" firstAttribute="trailing" secondItem="7o9-hf-PlT" secondAttribute="trailing" id="gdq-72-TS2"/>
+                                    <constraint firstItem="t7n-xA-XM8" firstAttribute="leading" secondItem="7o9-hf-PlT" secondAttribute="leading" id="hRP-Rn-dj7"/>
+                                    <constraint firstItem="0fK-Op-W0Y" firstAttribute="leading" secondItem="pJr-lq-Unx" secondAttribute="leading" id="qgu-Oq-5Tn"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzW-JZ-Ujf">
+                                <rect key="frame" x="0.0" y="798" width="414" height="98"/>
+                                <color key="backgroundColor" red="0.31372549019607843" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="RfA-JN-1qu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="TcF-3B-xyR"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TcF-3B-xyR" firstAttribute="trailing" secondItem="rFK-5i-rJY" secondAttribute="trailing" id="21d-aB-3AF"/>
+                            <constraint firstItem="6ai-1R-rTk" firstAttribute="leading" secondItem="TcF-3B-xyR" secondAttribute="leading" id="5ti-j3-vh9"/>
+                            <constraint firstAttribute="bottom" secondItem="nzW-JZ-Ujf" secondAttribute="bottom" id="81j-VR-HKx"/>
+                            <constraint firstItem="nzW-JZ-Ujf" firstAttribute="top" secondItem="rFK-5i-rJY" secondAttribute="bottom" id="9u9-r2-OV2"/>
+                            <constraint firstItem="6ai-1R-rTk" firstAttribute="top" secondItem="TcF-3B-xyR" secondAttribute="top" id="FuL-Tr-Mfp"/>
+                            <constraint firstItem="TcF-3B-xyR" firstAttribute="trailing" secondItem="nzW-JZ-Ujf" secondAttribute="trailing" id="KX5-jI-B9Y"/>
+                            <constraint firstItem="rFK-5i-rJY" firstAttribute="leading" secondItem="TcF-3B-xyR" secondAttribute="leading" id="OBt-Qe-aXK"/>
+                            <constraint firstItem="TcF-3B-xyR" firstAttribute="trailing" secondItem="6ai-1R-rTk" secondAttribute="trailing" id="XdO-cc-h20"/>
+                            <constraint firstItem="nzW-JZ-Ujf" firstAttribute="leading" secondItem="TcF-3B-xyR" secondAttribute="leading" id="mVw-W7-5n7"/>
+                            <constraint firstItem="rFK-5i-rJY" firstAttribute="top" secondItem="6ai-1R-rTk" secondAttribute="bottom" id="ztW-7G-NhP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ddipImageView" destination="pJr-lq-Unx" id="z0V-b3-sYQ"/>
+                        <outlet property="ddipItemTextField" destination="0fK-Op-W0Y" id="aBe-vr-X4y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvu-vy-smJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1949" y="131"/>
+            <point key="canvasLocation" x="1979.7101449275365" y="120.53571428571428"/>
         </scene>
     </scenes>
     <resources>
+        <image name="minus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
