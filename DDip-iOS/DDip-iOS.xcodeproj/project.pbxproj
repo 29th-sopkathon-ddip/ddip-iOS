@@ -32,6 +32,7 @@
 		EDE08DD627494DB50057A015 /* GmarketSansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDE08DD327494DB50057A015 /* GmarketSansLight.otf */; };
 		EDE08DD727494DB50057A015 /* GmarketSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDE08DD427494DB50057A015 /* GmarketSansBold.otf */; };
 		EDE08DDB27495A150057A015 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDA27495A150057A015 /* TabBarController.swift */; };
+		EDE08DDD274969A80057A015 /* CardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDC274969A80057A015 /* CardCVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		EDE08DD327494DB50057A015 /* GmarketSansLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansLight.otf; sourceTree = "<group>"; };
 		EDE08DD427494DB50057A015 /* GmarketSansBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansBold.otf; sourceTree = "<group>"; };
 		EDE08DDA27495A150057A015 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EDE08DDC274969A80057A015 /* CardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		EDE08D8027492E660057A015 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				EDE08DDC274969A80057A015 /* CardCVC.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				EDE08D9F274933F90057A015 /* UIScreen+.swift in Sources */,
 				EDE08D9027492FBA0057A015 /* DDipDetailVC.swift in Sources */,
 				EDE08D9B274933C50057A015 /* UIView+.swift in Sources */,
+				EDE08DDD274969A80057A015 /* CardCVC.swift in Sources */,
 				EDE08D6A27492E090057A015 /* SceneDelegate.swift in Sources */,
 				EDE08D9227492FE50057A015 /* DDipCreateVC.swift in Sources */,
 			);

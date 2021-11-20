@@ -22,15 +22,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Mx-La-794">
+                                <rect key="frame" x="180" y="125" width="234" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="KgJ-mK-E39"/>
+                                    <constraint firstAttribute="width" constant="234" id="Vdl-tC-qnC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="0Mx-La-794" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="37" id="4ub-lB-qjf"/>
                             <constraint firstItem="zG9-2I-ToR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="33" id="CcG-ZI-mPc"/>
+                            <constraint firstItem="0Mx-La-794" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="RN0-Hf-PJ6"/>
                             <constraint firstItem="zG9-2I-ToR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="54" id="hnC-jX-5xe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MrZ-S1-rjm"/>
+                    <connections>
+                        <outlet property="characterImage" destination="0Mx-La-794" id="teI-A6-azR"/>
+                        <outlet property="titleLabel" destination="zG9-2I-ToR" id="4Mg-6O-OQG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
