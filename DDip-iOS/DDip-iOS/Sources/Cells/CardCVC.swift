@@ -7,6 +7,10 @@
 
 import UIKit
 
+import SnapKit
+import Then
+import Kingfisher
+
 final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
     
     static var isFromNib: Bool {
@@ -18,6 +22,7 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
     private let imageView = UIImageView().then {
         $0.backgroundColor = .yellow
         $0.layer.cornerRadius = 22
+        $0.layer.masksToBounds = true
     }
     private let imageButton = UIButton().then {
         $0.backgroundColor = .main.withAlphaComponent(0.9)
@@ -51,6 +56,12 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func prepareForReuse() {
+        titleLabel.text = ""
+        ddipCountLabel.text = ""
+        imageView.image = nil
     }
     
     // MARK: - Setup Method
@@ -95,11 +106,14 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
     
     private func configUI() {
         backgroundColor = .clear
-        
-        titleLabel.text = "커피 세 병! 띱!"
+    }
+    
+    public func setupData(image: String, title: String, current: Int, max: Int) {
+        titleLabel.text = "\(title)\n띱!"
         titleLabel.addLineSpacing(kernValue: 0, paragraphValue: 22)
-        
-        ddipCountLabel.text = "2/3"
+        ddipCountLabel.text = "\(current)/\(max)"
+        guard let url = URL(string: image) else { return }
+        imageView.kf.setImage(with: url)
     }
     
     // MARK: - Selector
