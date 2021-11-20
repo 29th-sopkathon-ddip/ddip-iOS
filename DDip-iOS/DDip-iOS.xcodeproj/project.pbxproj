@@ -33,6 +33,7 @@
 		EDE08DD727494DB50057A015 /* GmarketSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDE08DD427494DB50057A015 /* GmarketSansBold.otf */; };
 		EDE08DDB27495A150057A015 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDA27495A150057A015 /* TabBarController.swift */; };
 		EDE08DDD274969A80057A015 /* CardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDC274969A80057A015 /* CardCVC.swift */; };
+		EDE08DDF274970430057A015 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDE274970430057A015 /* UILabel+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		EDE08DD427494DB50057A015 /* GmarketSansBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansBold.otf; sourceTree = "<group>"; };
 		EDE08DDA27495A150057A015 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EDE08DDC274969A80057A015 /* CardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCVC.swift; sourceTree = "<group>"; };
+		EDE08DDE274970430057A015 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				EDE08D9E274933F90057A015 /* UIScreen+.swift */,
 				EDE08DA0274934220057A015 /* Encodable+.swift */,
 				EDE08DA2274934810057A015 /* UITextField+.swift */,
+				EDE08DDE274970430057A015 /* UILabel+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			files = (
 				EDE08D8E27492F4D0057A015 /* DDipListVC.swift in Sources */,
 				EDE08DAC274935060057A015 /* ImageLiteral.swift in Sources */,
+				EDE08DDF274970430057A015 /* UILabel+.swift in Sources */,
 				EDE08DA3274934810057A015 /* UITextField+.swift in Sources */,
 				EDE08DDB27495A150057A015 /* TabBarController.swift in Sources */,
 				EDE08D6827492E090057A015 /* AppDelegate.swift in Sources */,

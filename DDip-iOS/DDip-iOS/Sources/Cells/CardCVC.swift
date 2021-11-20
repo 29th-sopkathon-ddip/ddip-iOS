@@ -16,7 +16,7 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
     // MARK: - UI
     
     private let imageView = UIImageView().then {
-        $0.backgroundColor = .gray
+        $0.backgroundColor = .yellow
         $0.layer.cornerRadius = 22
     }
     private let imageButton = UIButton().then {
@@ -27,6 +27,11 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
     private let ddipButton = UIButton().then {
         $0.backgroundColor = .gray
         $0.addTarget(self, action: #selector(didTappedDDip), for: .touchUpInside)
+    }
+    private let titleLabel = UILabel().then {
+        $0.font = .gmarketBoldFont(ofSize: 42)
+        $0.textColor = .white
+        $0.numberOfLines = 0
     }
     
     // MARK: - Initailzer
@@ -44,7 +49,8 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
     // MARK: - Setup Method
     
     private func render() {
-        addSubviews([imageView, imageButton, ddipButton])
+        addSubviews([imageView, imageButton, ddipButton,
+                    titleLabel])
         
         imageView.snp.makeConstraints {
             $0.width.equalTo(UIScreen.main.bounds.size.width - 66 - 27 - 21)
@@ -61,10 +67,19 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
             $0.trailing.equalToSuperview()
             $0.width.height.equalTo(152)
         }
+        
+        titleLabel.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(61)
+            $0.leading.equalToSuperview().inset(32)
+            $0.trailing.equalToSuperview().inset(32)
+        }
     }
     
     private func configUI() {
         backgroundColor = .clear
+        
+        titleLabel.text = "커피 세 병! 띱!"
+        titleLabel.addLineSpacing(kernValue: 0, paragraphValue: 22)
     }
     
     // MARK: - Selector

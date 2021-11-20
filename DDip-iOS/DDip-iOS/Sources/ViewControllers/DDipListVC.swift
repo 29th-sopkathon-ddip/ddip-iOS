@@ -52,6 +52,11 @@ final class DDipListVC: BaseViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         CardCVC.register(target: collectionView)
+        
+        titleLabel.text = "그린님,\n우리 함께\n띱한사이가\n되어볼까요"
+        titleLabel.addLineSpacing(kernValue: 0, paragraphValue: 10)
+        titleLabel.font = .gmarketBoldFont(ofSize: 22)
+        titleLabel.textColor = .white
     }
     
     override func render() {
