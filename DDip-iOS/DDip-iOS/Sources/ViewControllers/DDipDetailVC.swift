@@ -29,6 +29,10 @@ class DDipDetailVC: BaseViewController {
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "hidden"), object: nil)
+    }
+
     // MARK: - Override Methods
     
     override func render() {
@@ -69,6 +73,13 @@ class DDipDetailVC: BaseViewController {
         super.setData()
     }
     
+    @IBAction func touchUpDismiss(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func touchUpRegister(_ sender: Any) {
+        print("register")
+    }
 }
 
 // MARK: - Extensions

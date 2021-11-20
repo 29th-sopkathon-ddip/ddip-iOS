@@ -1,18 +1,18 @@
 {
   "images" : [
     {
+      "scale" : "1x",
       "idiom" : "universal",
-      "filename" : "uploadIcBack.png",
-      "scale" : "1x"
+      "filename" : "recordImg.png"
     },
     {
+      "scale" : "2x",
       "idiom" : "universal",
-      "filename" : "uploadIcBack@2x.png",
-      "scale" : "2x"
+      "filename" : "recordImg@2x.png"
     },
     {
+      "filename" : "recordImg@3x.png",
       "idiom" : "universal",
-      "filename" : "uploadIcBack@3x.png",
       "scale" : "3x"
     }
   ],

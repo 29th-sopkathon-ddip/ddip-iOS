@@ -33,7 +33,7 @@ class DDipPersonTVCell: UITableViewCell {
     func configUI() {
         backgroundColor = UIColor.black
         
-        personPercentageLabel.text = "2/3"
+        personPercentageLabel.text = "1/3"
         personPercentageLabel.font = UIFont.gmarketBoldFont(ofSize: 18)
         personPercentageLabel.textColor = UIColor.white
         
@@ -45,10 +45,6 @@ class DDipPersonTVCell: UITableViewCell {
         
         personNameLabelList.forEach({$0.font = UIFont.gmarketMediumFont(ofSize: 16)
             $0.textColor = UIColor(red: 0.488, green: 0.488, blue: 0.488, alpha: 1)
-        })
-        
-        imageviewList.forEach({
-            $0.image = UIImage(systemName: "pencil")
         })
         
         eachPersonBackView.forEach({

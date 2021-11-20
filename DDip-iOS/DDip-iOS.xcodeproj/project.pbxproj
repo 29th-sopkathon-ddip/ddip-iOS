@@ -62,6 +62,7 @@
 		EDE08E0827499ED40057A015 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E0727499ED40057A015 /* PostResponse.swift */; };
 		EDE08E0A2749A0DD0057A015 /* PostContentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E092749A0DD0057A015 /* PostContentRequest.swift */; };
 		EDE08E0C2749A2440057A015 /* PostContentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E0B2749A2440057A015 /* PostContentResponse.swift */; };
+		EDE08E0E2749B77F0057A015 /* MakeAlert+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E0D2749B77F0057A015 /* MakeAlert+UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +125,7 @@
 		EDE08E0727499ED40057A015 /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
 		EDE08E092749A0DD0057A015 /* PostContentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentRequest.swift; sourceTree = "<group>"; };
 		EDE08E0B2749A2440057A015 /* PostContentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentResponse.swift; sourceTree = "<group>"; };
+		EDE08E0D2749B77F0057A015 /* MakeAlert+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MakeAlert+UIViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +346,7 @@
 		EDE08D8927492EAA0057A015 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				EDE08E0D2749B77F0057A015 /* MakeAlert+UIViewController.swift */,
 				EDE08D98274933840057A015 /* ClassName+ViewController.swift */,
 			);
 			path = Util;
@@ -540,6 +543,7 @@
 				EDE08DE9274988050057A015 /* GeneralAPI.swift in Sources */,
 				EDE08D95274933520057A015 /* UITableViewRegisterable.swift in Sources */,
 				EDE08D9F274933F90057A015 /* UIScreen+.swift in Sources */,
+				EDE08E0E2749B77F0057A015 /* MakeAlert+UIViewController.swift in Sources */,
 				EDE08DED2749882E0057A015 /* UserData.swift in Sources */,
 				EDE08E0027499AC90057A015 /* LoginRequest.swift in Sources */,
 				EDE08DFE27499AA70057A015 /* LoginService.swift in Sources */,

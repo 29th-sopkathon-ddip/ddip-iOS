@@ -12,6 +12,7 @@ import Then
 
 protocol CardDelegate: AnyObject {
     func didTappedCard(index: Int)
+    func didTappedDetail(index: Int)
 }
 
 final class DDipListVC: BaseViewController {
@@ -33,6 +34,7 @@ final class DDipListVC: BaseViewController {
     private lazy var cellSize = CGSize(width: UIScreen.main.bounds.size.width - 66 - 27 , height: 416)
     private var minItemSpacing: CGFloat = 4
     private var previousIndex = 0
+    private let colors: [UIColor] = [.main, .sub3, .sub2, .sub1]
     
     // MARK: - Manager
     
@@ -47,6 +49,11 @@ final class DDipListVC: BaseViewController {
             guard let self = self else { return }
             self.collectionView.reloadData()
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "show"), object: nil)
+        collectionView.reloadData()
     }
     
     // MARK: - Override Methods
@@ -65,7 +72,7 @@ final class DDipListVC: BaseViewController {
         collectionView.dataSource = self
         CardCVC.register(target: collectionView)
         
-        titleLabel.text = "그린님,\n우리 함께\n띱한사이가\n되어볼까요"
+        titleLabel.text = "\(UserDefaultStorage.userName)님,\n우리 함께\n띱한사이가\n되어볼까요"
         titleLabel.addLineSpacing(kernValue: 0, paragraphValue: 10)
         titleLabel.font = .gmarketBoldFont(ofSize: 22)
         titleLabel.textColor = .white
@@ -93,6 +100,7 @@ extension DDipListVC: UICollectionViewDataSource {
         cell.index = indexPath.item
         let index = manager.lists[indexPath.row]
         cell.setupData(image: index.imageURL, title: index.title, current: index.currentCount, max: index.maxCount)
+        cell.imageButton.backgroundColor = colors[indexPath.item%4].withAlphaComponent(0.9)
         return cell
     }
 }
@@ -124,6 +132,12 @@ extension DDipListVC: CardDelegate {
             guard let card = self.collectionView.cellForItem(at: IndexPath(row: index, section: 0)) as? CardCVC else { return }
             card.ddipCountLabel.text = "\(self.manager.lists[index].currentCount + 1)/\(self.manager.lists[index].maxCount)"
             
+            self.makeAlert(title: "띱 성공!\n우리 사이 띱한 사이", message: "")
         })
+    }
+    
+    func didTappedDetail(index: Int) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: DDipDetailVC.className) as? DDipDetailVC else { return }
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
