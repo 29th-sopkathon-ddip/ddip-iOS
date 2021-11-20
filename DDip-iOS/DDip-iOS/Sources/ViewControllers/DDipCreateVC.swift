@@ -47,7 +47,7 @@ class DDipCreateVC: BaseViewController {
         [ddipImageView, ddipDetailTextView].forEach {
             $0.layer.cornerRadius = 10
         }
-        ddipPostButton.isEnabled = false
+        ddipPostButton.backgroundColor = UIColor.unselectedButton
     }
     
     private func setupDelegate() {
@@ -110,10 +110,10 @@ extension DDipCreateVC: UITextViewDelegate {
               let isTimeEmpty = ddipTimeTextField.text?.isEmpty
         else { return }
         
-        if isPlaceEmpty || isTimeEmpty, ddipDetailTextView.text != detailTextViewPlaceholder {
-            ddipPostButton.isEnabled = false
+        if isPlaceEmpty || isTimeEmpty || ddipDetailTextView.text == detailTextViewPlaceholder {
+            ddipPostButton.backgroundColor = UIColor.unselectedButton
         } else {
-            ddipPostButton.isEnabled = true
+            ddipPostButton.backgroundColor = UIColor.main
         }
     }
 }
@@ -138,10 +138,10 @@ extension DDipCreateVC: UITextFieldDelegate {
               let isTimeEmpty = ddipTimeTextField.text?.isEmpty
         else { return }
         
-        if isPlaceEmpty || isTimeEmpty, ddipDetailTextView.text != detailTextViewPlaceholder {
-            ddipPostButton.isEnabled = true
+        if isPlaceEmpty || isTimeEmpty || ddipDetailTextView.text == detailTextViewPlaceholder {
+            ddipPostButton.backgroundColor = UIColor.unselectedButton
         } else {
-            ddipPostButton.isEnabled = false
+            ddipPostButton.backgroundColor = UIColor.main
         }
     }
 }

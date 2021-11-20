@@ -278,7 +278,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzW-JZ-Ujf">
                                 <rect key="frame" x="0.0" y="798" width="414" height="98"/>
-                                <color key="backgroundColor" red="0.31372549019607843" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="RfA-JN-1qu"/>
                                 </constraints>
