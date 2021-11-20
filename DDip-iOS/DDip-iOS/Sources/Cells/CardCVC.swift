@@ -30,7 +30,7 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
         $0.addTarget(self, action: #selector(didTappedDetail), for: .touchUpInside)
     }
     private let ddipButton = UIButton().then {
-        $0.backgroundColor = .gray
+        $0.setImage(UIImage(named: "mainIcHand"), for: .normal)
         $0.addTarget(self, action: #selector(didTappedDDip), for: .touchUpInside)
     }
     private let titleLabel = UILabel().then {

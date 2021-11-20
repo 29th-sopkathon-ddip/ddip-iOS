@@ -31,7 +31,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Mx-La-794">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainImgHuman" translatesAutoresizingMaskIntoConstraints="NO" id="0Mx-La-794">
                                 <rect key="frame" x="180" y="125" width="234" height="194"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="194" id="KgJ-mK-E39"/>
@@ -373,7 +373,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HnR-4k-Pb4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="HnR-4k-Pb4">
                                 <rect key="frame" x="38" y="107" width="106" height="138"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="106" id="Yul-dy-a8U"/>
@@ -392,7 +392,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IbQ-9d-89o">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nicknameTextbox" translatesAutoresizingMaskIntoConstraints="NO" id="IbQ-9d-89o">
                                 <rect key="frame" x="33" y="339" width="348" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="gSb-YD-Nwc"/>
@@ -409,7 +409,7 @@
                                     <constraint firstAttribute="height" constant="53" id="Tgt-sS-3ah"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nicknameButtonStart"/>
                                 <connections>
                                     <action selector="didTappedRegister:" destination="WDr-7j-Wxi" eventType="touchUpInside" id="XVZ-jo-Pd8"/>
                                 </connections>
@@ -448,6 +448,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="logo" width="106" height="138"/>
+        <image name="mainImgHuman" width="234" height="194"/>
+        <image name="nicknameButtonStart" width="134" height="33"/>
+        <image name="nicknameTextbox" width="324" height="64"/>
         <image name="uploadAddCircle" width="26" height="26"/>
         <image name="uploadBtnDdip" width="168" height="46"/>
         <image name="uploadIcBack" width="30" height="30"/>
