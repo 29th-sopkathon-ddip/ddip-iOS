@@ -35,4 +35,16 @@ extension UIColor {
     @nonobjc class var gray: UIColor {
         return UIColor(red: 62/255, green: 62/255, blue: 62/255, alpha: 1)
     }
+    
+    @nonobjc class var lightGray: UIColor {
+        return UIColor(red: 233/255, green: 233/255, blue: 233/255, alpha: 1)
+    }
+    
+    @nonobjc class var placeholder: UIColor {
+        return UIColor(red: 117/255, green: 117/255, blue: 117/255, alpha: 117/255)
+    }
+    
+    @nonobjc class var unselectedButton: UIColor {
+        return UIColor(red: 124/255, green: 124/255, blue: 124/255, alpha: 124/255)
+    }
 }

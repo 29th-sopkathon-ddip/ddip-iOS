@@ -40,6 +40,28 @@
 		EDE08DDB27495A150057A015 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDA27495A150057A015 /* TabBarController.swift */; };
 		EDE08DDD274969A80057A015 /* CardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDC274969A80057A015 /* CardCVC.swift */; };
 		EDE08DDF274970430057A015 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDE274970430057A015 /* UILabel+.swift */; };
+		EDE08DE127497A570057A015 /* DDipHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DE027497A570057A015 /* DDipHistoryVC.swift */; };
+		EDE08DE327497C0E0057A015 /* HistoryHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DE227497C0E0057A015 /* HistoryHeaderTVC.swift */; };
+		EDE08DE527497C560057A015 /* HistoryContentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DE427497C560057A015 /* HistoryContentTVC.swift */; };
+		EDE08DE7274984140057A015 /* NicknameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DE6274984140057A015 /* NicknameVC.swift */; };
+		EDE08DE9274988050057A015 /* GeneralAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DE8274988050057A015 /* GeneralAPI.swift */; };
+		EDE08DEB274988170057A015 /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DEA274988170057A015 /* NetworkLoggerPlugin.swift */; };
+		EDE08DED2749882E0057A015 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DEC2749882E0057A015 /* UserData.swift */; };
+		EDE08DEF274988970057A015 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DEE274988970057A015 /* Login.swift */; };
+		EDE08DF12749892A0057A015 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DF02749892A0057A015 /* MainService.swift */; };
+		EDE08DF4274989D60057A015 /* MainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DF3274989D60057A015 /* MainManager.swift */; };
+		EDE08DF627498BF70057A015 /* MainResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DF527498BF70057A015 /* MainResponse.swift */; };
+		EDE08DF827498F090057A015 /* MainRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DF727498F090057A015 /* MainRequest.swift */; };
+		EDE08DFA274994700057A015 /* MainPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DF9274994700057A015 /* MainPostRequest.swift */; };
+		EDE08DFC274994AF0057A015 /* MainPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DFB274994AF0057A015 /* MainPostResponse.swift */; };
+		EDE08DFE27499AA70057A015 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DFD27499AA70057A015 /* LoginService.swift */; };
+		EDE08E0027499AC90057A015 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DFF27499AC90057A015 /* LoginRequest.swift */; };
+		EDE08E0227499B460057A015 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E0127499B460057A015 /* LoginResponse.swift */; };
+		EDE08E0427499B640057A015 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E0327499B640057A015 /* LoginManager.swift */; };
+		EDE08E0627499E7A0057A015 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E0527499E7A0057A015 /* PostRequest.swift */; };
+		EDE08E0827499ED40057A015 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E0727499ED40057A015 /* PostResponse.swift */; };
+		EDE08E0A2749A0DD0057A015 /* PostContentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E092749A0DD0057A015 /* PostContentRequest.swift */; };
+		EDE08E0C2749A2440057A015 /* PostContentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E0B2749A2440057A015 /* PostContentResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +102,28 @@
 		EDE08DDA27495A150057A015 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EDE08DDC274969A80057A015 /* CardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCVC.swift; sourceTree = "<group>"; };
 		EDE08DDE274970430057A015 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		EDE08DE027497A570057A015 /* DDipHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDipHistoryVC.swift; sourceTree = "<group>"; };
+		EDE08DE227497C0E0057A015 /* HistoryHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryHeaderTVC.swift; sourceTree = "<group>"; };
+		EDE08DE427497C560057A015 /* HistoryContentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryContentTVC.swift; sourceTree = "<group>"; };
+		EDE08DE6274984140057A015 /* NicknameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameVC.swift; sourceTree = "<group>"; };
+		EDE08DE8274988050057A015 /* GeneralAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAPI.swift; sourceTree = "<group>"; };
+		EDE08DEA274988170057A015 /* NetworkLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoggerPlugin.swift; sourceTree = "<group>"; };
+		EDE08DEC2749882E0057A015 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		EDE08DEE274988970057A015 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		EDE08DF02749892A0057A015 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		EDE08DF3274989D60057A015 /* MainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainManager.swift; sourceTree = "<group>"; };
+		EDE08DF527498BF70057A015 /* MainResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainResponse.swift; sourceTree = "<group>"; };
+		EDE08DF727498F090057A015 /* MainRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRequest.swift; sourceTree = "<group>"; };
+		EDE08DF9274994700057A015 /* MainPostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPostRequest.swift; sourceTree = "<group>"; };
+		EDE08DFB274994AF0057A015 /* MainPostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPostResponse.swift; sourceTree = "<group>"; };
+		EDE08DFD27499AA70057A015 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		EDE08DFF27499AC90057A015 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		EDE08E0127499B460057A015 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		EDE08E0327499B640057A015 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		EDE08E0527499E7A0057A015 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		EDE08E0727499ED40057A015 /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
+		EDE08E092749A0DD0057A015 /* PostContentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentRequest.swift; sourceTree = "<group>"; };
+		EDE08E0B2749A2440057A015 /* PostContentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +233,8 @@
 				EDE08D8D27492F4D0057A015 /* DDipListVC.swift */,
 				EDE08D8F27492FBA0057A015 /* DDipDetailVC.swift */,
 				EDE08D9127492FE50057A015 /* DDipCreateVC.swift */,
+				EDE08DE027497A570057A015 /* DDipHistoryVC.swift */,
+				EDE08DE6274984140057A015 /* NicknameVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -197,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				EDE08DDC274969A80057A015 /* CardCVC.swift */,
+				EDE08DE227497C0E0057A015 /* HistoryHeaderTVC.swift */,
+				EDE08DE427497C560057A015 /* HistoryContentTVC.swift */,
 				19A4D9D627497E3E00483056 /* DDipDetailTVCell.swift */,
 				19A4D9DE27498A4700483056 /* DDipDescriptionTVCell.swift */,
 				19A4D9DA27497F1D00483056 /* DDipPersonTVCell.swift */,
@@ -220,6 +268,7 @@
 		EDE08D8227492E730057A015 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				EDE08DF2274989CB0057A015 /* Manager */,
 				EDE08D8527492E7E0057A015 /* APIService */,
 				EDE08D8427492E7A0057A015 /* Foundation */,
 				EDE08D8327492E780057A015 /* Model */,
@@ -230,6 +279,16 @@
 		EDE08D8327492E780057A015 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EDE08DF527498BF70057A015 /* MainResponse.swift */,
+				EDE08DF727498F090057A015 /* MainRequest.swift */,
+				EDE08DF9274994700057A015 /* MainPostRequest.swift */,
+				EDE08DFB274994AF0057A015 /* MainPostResponse.swift */,
+				EDE08DFF27499AC90057A015 /* LoginRequest.swift */,
+				EDE08E0127499B460057A015 /* LoginResponse.swift */,
+				EDE08E0527499E7A0057A015 /* PostRequest.swift */,
+				EDE08E0727499ED40057A015 /* PostResponse.swift */,
+				EDE08E092749A0DD0057A015 /* PostContentRequest.swift */,
+				EDE08E0B2749A2440057A015 /* PostContentResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,6 +296,10 @@
 		EDE08D8427492E7A0057A015 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				EDE08DE8274988050057A015 /* GeneralAPI.swift */,
+				EDE08DEA274988170057A015 /* NetworkLoggerPlugin.swift */,
+				EDE08DEC2749882E0057A015 /* UserData.swift */,
+				EDE08DEE274988970057A015 /* Login.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -244,6 +307,8 @@
 		EDE08D8527492E7E0057A015 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
+				EDE08DF02749892A0057A015 /* MainService.swift */,
+				EDE08DFD27499AA70057A015 /* LoginService.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -311,6 +376,15 @@
 				EDE08DD227494DB50057A015 /* GmarketSansMedium.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EDE08DF2274989CB0057A015 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EDE08DF3274989D60057A015 /* MainManager.swift */,
+				EDE08E0327499B640057A015 /* LoginManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,25 +509,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE08D8E27492F4D0057A015 /* DDipListVC.swift in Sources */,
+				EDE08E0627499E7A0057A015 /* PostRequest.swift in Sources */,
+				EDE08E0827499ED40057A015 /* PostResponse.swift in Sources */,
+				EDE08E0227499B460057A015 /* LoginResponse.swift in Sources */,
+				EDE08DEB274988170057A015 /* NetworkLoggerPlugin.swift in Sources */,
 				EDE08DAC274935060057A015 /* ImageLiteral.swift in Sources */,
+				EDE08DE7274984140057A015 /* NicknameVC.swift in Sources */,
+				EDE08E0A2749A0DD0057A015 /* PostContentRequest.swift in Sources */,
 				EDE08DDF274970430057A015 /* UILabel+.swift in Sources */,
+				EDE08DE127497A570057A015 /* DDipHistoryVC.swift in Sources */,
 				EDE08DA3274934810057A015 /* UITextField+.swift in Sources */,
+				EDE08DEF274988970057A015 /* Login.swift in Sources */,
 				EDE08DDB27495A150057A015 /* TabBarController.swift in Sources */,
+				EDE08DE527497C560057A015 /* HistoryContentTVC.swift in Sources */,
 				EDE08D6827492E090057A015 /* AppDelegate.swift in Sources */,
+				EDE08DE327497C0E0057A015 /* HistoryHeaderTVC.swift in Sources */,
 				19A4D9D827497E3E00483056 /* DDipDetailTVCell.swift in Sources */,
 				EDE08D9D274933E00057A015 /* UIViewController+.swift in Sources */,
+				EDE08DFC274994AF0057A015 /* MainPostResponse.swift in Sources */,
+				EDE08DFA274994700057A015 /* MainPostRequest.swift in Sources */,
 				EDE08DA8274934F30057A015 /* FontLiteral.swift in Sources */,
 				EDE08DA1274934220057A015 /* Encodable+.swift in Sources */,
 				EDE08DA62749349A0057A015 /* BaseViewController.swift in Sources */,
 				19A4D9E027498A4700483056 /* DDipDescriptionTVCell.swift in Sources */,
 				EDE08D99274933840057A015 /* ClassName+ViewController.swift in Sources */,
+				EDE08DF627498BF70057A015 /* MainResponse.swift in Sources */,
 				EDE08D97274933610057A015 /* UICollectionViewRegisterable.swift in Sources */,
+				EDE08DF4274989D60057A015 /* MainManager.swift in Sources */,
 				EDE08DAA274934FA0057A015 /* ColorLiteral.swift in Sources */,
+				EDE08DE9274988050057A015 /* GeneralAPI.swift in Sources */,
 				EDE08D95274933520057A015 /* UITableViewRegisterable.swift in Sources */,
 				EDE08D9F274933F90057A015 /* UIScreen+.swift in Sources */,
+				EDE08DED2749882E0057A015 /* UserData.swift in Sources */,
+				EDE08E0027499AC90057A015 /* LoginRequest.swift in Sources */,
+				EDE08DFE27499AA70057A015 /* LoginService.swift in Sources */,
+				EDE08DF12749892A0057A015 /* MainService.swift in Sources */,
+				EDE08DF827498F090057A015 /* MainRequest.swift in Sources */,
 				EDE08D9027492FBA0057A015 /* DDipDetailVC.swift in Sources */,
+				EDE08E0C2749A2440057A015 /* PostContentResponse.swift in Sources */,
 				EDE08D9B274933C50057A015 /* UIView+.swift in Sources */,
 				EDE08DDD274969A80057A015 /* CardCVC.swift in Sources */,
+				EDE08E0427499B640057A015 /* LoginManager.swift in Sources */,
 				EDE08D6A27492E090057A015 /* SceneDelegate.swift in Sources */,
 				EDE08D9227492FE50057A015 /* DDipCreateVC.swift in Sources */,
 				19A4D9DC27497F1D00483056 /* DDipPersonTVCell.swift in Sources */,
