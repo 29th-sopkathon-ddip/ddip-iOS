@@ -37,6 +37,7 @@
 		EDE08DE127497A570057A015 /* DDipHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DE027497A570057A015 /* DDipHistoryVC.swift */; };
 		EDE08DE327497C0E0057A015 /* HistoryHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DE227497C0E0057A015 /* HistoryHeaderTVC.swift */; };
 		EDE08DE527497C560057A015 /* HistoryContentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DE427497C560057A015 /* HistoryContentTVC.swift */; };
+		EDE08DE7274984140057A015 /* NicknameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DE6274984140057A015 /* NicknameVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		EDE08DE027497A570057A015 /* DDipHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDipHistoryVC.swift; sourceTree = "<group>"; };
 		EDE08DE227497C0E0057A015 /* HistoryHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryHeaderTVC.swift; sourceTree = "<group>"; };
 		EDE08DE427497C560057A015 /* HistoryContentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryContentTVC.swift; sourceTree = "<group>"; };
+		EDE08DE6274984140057A015 /* NicknameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				EDE08D8F27492FBA0057A015 /* DDipDetailVC.swift */,
 				EDE08D9127492FE50057A015 /* DDipCreateVC.swift */,
 				EDE08DE027497A570057A015 /* DDipHistoryVC.swift */,
+				EDE08DE6274984140057A015 /* NicknameVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 			files = (
 				EDE08D8E27492F4D0057A015 /* DDipListVC.swift in Sources */,
 				EDE08DAC274935060057A015 /* ImageLiteral.swift in Sources */,
+				EDE08DE7274984140057A015 /* NicknameVC.swift in Sources */,
 				EDE08DDF274970430057A015 /* UILabel+.swift in Sources */,
 				EDE08DE127497A570057A015 /* DDipHistoryVC.swift in Sources */,
 				EDE08DA3274934810057A015 /* UITextField+.swift in Sources */,
