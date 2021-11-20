@@ -9,4 +9,5 @@ target 'DDip-iOS' do
   pod 'Moya', '~> 14.0'
   pod 'Then'
   pod 'SnapKit'
+  pod 'Kingfisher', '~> 6.0'
 end

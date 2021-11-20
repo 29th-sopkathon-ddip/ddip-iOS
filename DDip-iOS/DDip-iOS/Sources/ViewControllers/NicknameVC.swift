@@ -17,6 +17,8 @@ final class NicknameVC: BaseViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var startButton: UIButton!
     
+    private let manager = LoginManager.shared
+    
     override func viewDidLoad() {
         hideKeyboardWhenTappedAround()
         super.viewDidLoad()
@@ -41,5 +43,13 @@ final class NicknameVC: BaseViewController {
         startButton.backgroundColor = .black
         startButton.layer.cornerRadius = 10
     }
+    
+    @IBAction func didTappedRegister(_ sender: Any) {
+        guard let nickname = textField.text else { return }
+        manager.dispatchLogin(nickname: nickname, completion: {
+            print("hi")
+        })
+    }
+    
 
 }
