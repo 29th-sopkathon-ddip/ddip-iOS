@@ -25,6 +25,7 @@ class BaseViewController: UIViewController {
     
     func configUI() {
         // Configuration UI
+        view.backgroundColor = UIColor.black
     }
     
     func setupLocalization() {
