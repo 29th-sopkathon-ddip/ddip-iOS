@@ -6,7 +6,7 @@
 ## 역할 분담
    |김인환|배은서|신윤아|
 |:------:|:---:|:---:|
-|`DDip Detail`<br>|`DDip Create`<br>|`DDip List View`<br>|
+|`DDip Detail`<br>|`DDip Create`<br>|`DDip List`<br>|
 |`DDip Nickname`<br>|`DDip Give`<br>|`DDip Tab`<br>|
 
 
@@ -73,35 +73,11 @@
 
    - `self`는 최대한 사용을 **지양**
 
-   - ```
-     viewDidLoad()
-     ```
-
-     ```
-     viewwillAppear()
-     ```
-
-     ```
-     viewwillDisappear
-     ```
-
-      에서는 
-
-     함수호출만
+   - `viewDidLoad()` `viewwillAppear()` `viewwillDisappear`에서는 함수호출만
 
      - delegate 지정, UI관련 설정 등등 모두 함수로
 
-   - 함수는 
-
-     ```
-     extension
-     ```
-
-     ```
-     Util
-     ```
-
-     에 정의하고 정리
+   - 함수는 `extension` `Util`에 정의하고 정리
 
      - `extension`은 목적에 따라 분류
 
@@ -207,7 +183,7 @@
 ## **프로젝트 폴더링**
 
       DDip-iOS 
-      	│
+        │
         |── Network
         │   │── Manager 
         │   │── Model
@@ -220,14 +196,14 @@
         │   |── Extensions
         │   |── Components
         │   |── Cells
-      	│	|── ViewControllers
+        │	|── ViewControllers
         │   └── Supports
-      	│	        |── AppDelegate.swift
-      	│			└── SceneDelegate.swift
+        │	        |── AppDelegate.swift
+        │           └── SceneDelegate.swift
         └── Resource
                 |── Views
-      	        |	 |── Storyboards
-      		    │    |       └── LaunchScreen.storyboard
-      		    |	 └── Xibs
+                |	 |── Storyboards
+                │    |       └── LaunchScreen.storyboard
+                |	 └── Xibs
                 |── Assets.xcassets
                 └── Info.plist
