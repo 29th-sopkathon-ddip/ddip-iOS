@@ -34,6 +34,9 @@
 		EDE08DDB27495A150057A015 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDA27495A150057A015 /* TabBarController.swift */; };
 		EDE08DDD274969A80057A015 /* CardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDC274969A80057A015 /* CardCVC.swift */; };
 		EDE08DDF274970430057A015 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DDE274970430057A015 /* UILabel+.swift */; };
+		EDE08DE127497A570057A015 /* DDipHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DE027497A570057A015 /* DDipHistoryVC.swift */; };
+		EDE08DE327497C0E0057A015 /* HistoryHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DE227497C0E0057A015 /* HistoryHeaderTVC.swift */; };
+		EDE08DE527497C560057A015 /* HistoryContentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DE427497C560057A015 /* HistoryContentTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,9 @@
 		EDE08DDA27495A150057A015 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EDE08DDC274969A80057A015 /* CardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCVC.swift; sourceTree = "<group>"; };
 		EDE08DDE274970430057A015 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		EDE08DE027497A570057A015 /* DDipHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDipHistoryVC.swift; sourceTree = "<group>"; };
+		EDE08DE227497C0E0057A015 /* HistoryHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryHeaderTVC.swift; sourceTree = "<group>"; };
+		EDE08DE427497C560057A015 /* HistoryContentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryContentTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +183,7 @@
 				EDE08D8D27492F4D0057A015 /* DDipListVC.swift */,
 				EDE08D8F27492FBA0057A015 /* DDipDetailVC.swift */,
 				EDE08D9127492FE50057A015 /* DDipCreateVC.swift */,
+				EDE08DE027497A570057A015 /* DDipHistoryVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				EDE08DDC274969A80057A015 /* CardCVC.swift */,
+				EDE08DE227497C0E0057A015 /* HistoryHeaderTVC.swift */,
+				EDE08DE427497C560057A015 /* HistoryContentTVC.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -416,9 +425,12 @@
 				EDE08D8E27492F4D0057A015 /* DDipListVC.swift in Sources */,
 				EDE08DAC274935060057A015 /* ImageLiteral.swift in Sources */,
 				EDE08DDF274970430057A015 /* UILabel+.swift in Sources */,
+				EDE08DE127497A570057A015 /* DDipHistoryVC.swift in Sources */,
 				EDE08DA3274934810057A015 /* UITextField+.swift in Sources */,
 				EDE08DDB27495A150057A015 /* TabBarController.swift in Sources */,
+				EDE08DE527497C560057A015 /* HistoryContentTVC.swift in Sources */,
 				EDE08D6827492E090057A015 /* AppDelegate.swift in Sources */,
+				EDE08DE327497C0E0057A015 /* HistoryHeaderTVC.swift in Sources */,
 				EDE08D9D274933E00057A015 /* UIViewController+.swift in Sources */,
 				EDE08DA8274934F30057A015 /* FontLiteral.swift in Sources */,
 				EDE08DA1274934220057A015 /* Encodable+.swift in Sources */,

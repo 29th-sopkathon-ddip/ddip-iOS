@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Then
 
-private extension CGFloat {
+extension CGFloat {
     static let tabbarHeight = 99.0
 }
 
@@ -46,7 +46,7 @@ class TabBarController: BaseViewController {
     private var viewControllers = [UIViewController]()
     
     static let listVC = UIStoryboard(name: "DDipMain", bundle: nil).instantiateViewController(withIdentifier: DDipListVC.className)
-    static let historyVC = UIStoryboard(name: "DDipMain", bundle: nil).instantiateViewController(withIdentifier: DDipListVC.className)
+    static let historyVC = UIStoryboard(name: "DDipMain", bundle: nil).instantiateViewController(withIdentifier: DDipHistoryVC.className)
     static let createVC = UIStoryboard(name: "DDipMain", bundle: nil).instantiateViewController(withIdentifier: DDipCreateVC.className)
 
     // MARK: - View Life Cycle
