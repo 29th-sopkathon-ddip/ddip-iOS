@@ -43,4 +43,8 @@ extension UIColor {
     @nonobjc class var placeholder: UIColor {
         return UIColor(red: 117/255, green: 117/255, blue: 117/255, alpha: 117/255)
     }
+    
+    @nonobjc class var unselectedButton: UIColor {
+        return UIColor(red: 124/255, green: 124/255, blue: 124/255, alpha: 124/255)
+    }
 }

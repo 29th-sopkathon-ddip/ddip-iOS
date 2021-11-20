@@ -99,9 +99,9 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="57"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdt-gH-vNS">
-                                        <rect key="frame" x="33" y="13" width="43.5" height="31"/>
+                                        <rect key="frame" x="33" y="6.5" width="54" height="44"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="uploadIcBack"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="띱 등록하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovW-Vr-noO">
                                         <rect key="frame" x="161" y="19.5" width="92" height="18"/>
@@ -131,10 +131,10 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9I-rR-RzI">
-                                        <rect key="frame" x="174" y="115" width="67" height="31"/>
+                                        <rect key="frame" x="183" y="111" width="50" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="uploadAddCircle"/>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="무엇을 띱하실건가요?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0fK-Op-W0Y">
                                         <rect key="frame" x="45" y="270" width="211" height="23.5"/>
@@ -209,7 +209,7 @@
                                         </constraints>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t7n-xA-XM8">
-                                        <rect key="frame" x="45" y="501.5" width="324" height="105"/>
+                                        <rect key="frame" x="45" y="505.5" width="324" height="105"/>
                                         <color key="backgroundColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="105" id="Okk-Qz-c5n"/>
@@ -219,37 +219,37 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cSW-c6-fde">
-                                        <rect key="frame" x="45" y="446.5" width="324" height="22"/>
+                                        <rect key="frame" x="45" y="446.5" width="324" height="26"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QU0-38-Z6U">
-                                                <rect key="frame" x="0.0" y="0.0" width="228" height="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="216" height="26"/>
                                                 <fontDescription key="fontDescription" name="GmarketSansBold" family="Gmarket Sans" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="bf0-Xv-xYL">
-                                                <rect key="frame" x="236" y="0.0" width="88" height="22"/>
+                                                <rect key="frame" x="224" y="0.0" width="100" height="26"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVW-Pt-Ivn">
-                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="22"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="minus.circle.fill" catalog="system"/>
+                                                        <state key="normal" image="uploadRemoveCircle"/>
                                                         <connections>
                                                             <action selector="touchUpMinusButton:" destination="tse-fj-U8D" eventType="touchUpInside" id="VHf-WN-XJG"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9f-KW-pbG">
-                                                        <rect key="frame" x="29" y="0.0" width="30" height="22"/>
+                                                        <rect key="frame" x="35" y="0.0" width="30" height="26"/>
                                                         <fontDescription key="fontDescription" name="GmarketSansBold" family="Gmarket Sans" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhC-XX-Oyf">
-                                                        <rect key="frame" x="68" y="0.0" width="20" height="22"/>
+                                                        <rect key="frame" x="74" y="0.0" width="26" height="26"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="plus.circle.fill" catalog="system"/>
+                                                        <state key="normal" image="uploadAddCircle"/>
                                                         <connections>
                                                             <action selector="touchUpPlusButton:" destination="tse-fj-U8D" eventType="touchUpInside" id="5u7-ef-hi8"/>
                                                         </connections>
@@ -276,14 +276,14 @@
                                     <constraint firstItem="cSW-c6-fde" firstAttribute="top" secondItem="7o9-hf-PlT" secondAttribute="bottom" constant="27" id="vKf-au-YwY"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzW-JZ-Ujf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzW-JZ-Ujf">
                                 <rect key="frame" x="0.0" y="798" width="414" height="98"/>
-                                <color key="backgroundColor" red="0.31372549019607843" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="RfA-JN-1qu"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="uploadBtnDdip"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TcF-3B-xyR"/>
@@ -308,6 +308,7 @@
                         <outlet property="ddipMinusCountButton" destination="XVW-Pt-Ivn" id="9nj-AS-yb6"/>
                         <outlet property="ddipPalceTextField" destination="Q5g-wC-PiH" id="d4T-Jd-eE5"/>
                         <outlet property="ddipPlusCountButton" destination="DhC-XX-Oyf" id="3OQ-jA-OcT"/>
+                        <outlet property="ddipPostButton" destination="nzW-JZ-Ujf" id="O4W-Bf-XRA"/>
                         <outlet property="ddipTimeTextField" destination="o3m-ma-En3" id="PSG-RK-uQd"/>
                         <outlet property="ddipTitleTextField" destination="0fK-Op-W0Y" id="aBe-vr-X4y"/>
                     </connections>
@@ -447,9 +448,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.backward" catalog="system" width="128" height="98"/>
-        <image name="minus.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="uploadAddCircle" width="26" height="26"/>
+        <image name="uploadBtnDdip" width="168" height="46"/>
+        <image name="uploadIcBack" width="30" height="30"/>
+        <image name="uploadRemoveCircle" width="26" height="26"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
