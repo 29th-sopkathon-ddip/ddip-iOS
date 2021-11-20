@@ -25,10 +25,14 @@ class DDipCreateVC: BaseViewController {
     
     @IBOutlet weak var ddipDetailTextView: UITextView!
     
+    @IBOutlet weak var ddipPostButton: UIButton!
+    
     var focusTextFieldBottom: CGFloat = 0.0
     var focusTextViewBottom: CGFloat = 0.0
     
     var ddipCount: Int = 0
+    
+    let detailTextViewPlaceholder = "띱 한마디 작성하기"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +47,7 @@ class DDipCreateVC: BaseViewController {
         [ddipImageView, ddipDetailTextView].forEach {
             $0.layer.cornerRadius = 10
         }
+        ddipPostButton.isEnabled = false
     }
     
     private func setupDelegate() {
@@ -61,7 +66,7 @@ class DDipCreateVC: BaseViewController {
     
     private func setupTextViewPlaceholder() {
         ddipDetailTextView.delegate = self
-        ddipDetailTextView.text = "띱 한마디 작성하기"
+        ddipDetailTextView.text = detailTextViewPlaceholder
         ddipDetailTextView.textColor = UIColor.placeholder
         ddipDetailTextView.textContainerInset = UIEdgeInsets(top: 12, left: 17, bottom: 15, right: 17)
     }
@@ -99,6 +104,18 @@ extension DDipCreateVC: UITextViewDelegate {
             self.ddipCreateView.transform = .identity
         }, completion: nil)
     }
+    
+    func textViewDidChangeSelection(_ textView: UITextView) {
+        guard let isPlaceEmpty = ddipPalceTextField.text?.isEmpty,
+              let isTimeEmpty = ddipTimeTextField.text?.isEmpty
+        else { return }
+        
+        if isPlaceEmpty || isTimeEmpty, ddipDetailTextView.text != detailTextViewPlaceholder {
+            ddipPostButton.isEnabled = false
+        } else {
+            ddipPostButton.isEnabled = true
+        }
+    }
 }
 
 extension DDipCreateVC: UITextFieldDelegate {
@@ -114,5 +131,17 @@ extension DDipCreateVC: UITextFieldDelegate {
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
             self.ddipCreateView.transform = .identity
         }, completion: nil)
+    }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        guard let isPlaceEmpty = ddipPalceTextField.text?.isEmpty,
+              let isTimeEmpty = ddipTimeTextField.text?.isEmpty
+        else { return }
+        
+        if isPlaceEmpty || isTimeEmpty, ddipDetailTextView.text != detailTextViewPlaceholder {
+            ddipPostButton.isEnabled = true
+        } else {
+            ddipPostButton.isEnabled = false
+        }
     }
 }
