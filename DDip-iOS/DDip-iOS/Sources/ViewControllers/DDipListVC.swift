@@ -10,6 +10,10 @@ import UIKit
 import SnapKit
 import Then
 
+protocol CardDelegate: AnyObject {
+    func didTappedCard(index: Int)
+}
+
 final class DDipListVC: BaseViewController {
     
     // MARK: - @IBOutlet
@@ -85,6 +89,8 @@ extension DDipListVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCVC.className, for: indexPath) as? CardCVC else { return UICollectionViewCell() }
+        cell.delegate = self
+        cell.index = indexPath.item
         let index = manager.lists[indexPath.row]
         cell.setupData(image: index.imageURL, title: index.title, current: index.currentCount, max: index.maxCount)
         return cell
@@ -109,5 +115,15 @@ extension DDipListVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelega
         
         offset = CGPoint(x: roundedIndex * cellWidthIncludeSpacing - scrollView.contentInset.left, y: scrollView.contentInset.top)
         targetContentOffset.pointee = offset
+    }
+}
+
+extension DDipListVC: CardDelegate {
+    func didTappedCard(index: Int) {
+        manager.dispatchMain(postId: manager.lists[index].id, completion: {
+            guard let card = self.collectionView.cellForItem(at: IndexPath(row: index, section: 0)) as? CardCVC else { return }
+            card.ddipCountLabel.text = "\(self.manager.lists[index].currentCount + 1)/\(self.manager.lists[index].maxCount)"
+            
+        })
     }
 }

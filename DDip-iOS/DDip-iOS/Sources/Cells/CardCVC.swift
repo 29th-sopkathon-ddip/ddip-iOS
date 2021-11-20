@@ -41,10 +41,14 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
     private let personIcon = UIImageView().then {
         $0.backgroundColor = .yellow
     }
-    private let ddipCountLabel = UILabel().then {
+    var ddipCountLabel = UILabel().then {
         $0.font = .gmarketBoldFont(ofSize: 18)
         $0.textColor = .white
     }
+    
+    weak var delegate: CardDelegate?
+    
+    var index: Int = 0
     
     // MARK: - Initailzer
     
@@ -120,12 +124,12 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
     
     @objc
     private func didTappedDetail() {
-        print("detail")
+        
     }
     
     @objc
     private func didTappedDDip() {
-        print("ddip")
+        delegate?.didTappedCard(index: index)
     }
     
 }

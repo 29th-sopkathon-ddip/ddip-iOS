@@ -9,6 +9,9 @@ import Moya
 
 enum MainService {
     case main(param: MainRequest)
+    case detailMain(param: MainPostRequest)
+    case detailPost(param: PostRequest)
+    case post(param: PostContentRequest)
 }
 
 extension MainService: TargetType {
@@ -18,15 +21,23 @@ extension MainService: TargetType {
     
     var path: String {
         switch self {
-        case .main:
+        case .main,
+             .detailMain:
             return "/main"
+        case .detailPost,
+             .post:
+            return "/post"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .main:
+        case .main,
+             .detailPost:
             return .get
+        case .detailMain,
+             .post:
+            return .post
         }
     }
     
@@ -38,6 +49,12 @@ extension MainService: TargetType {
         switch self {
         case .main(let param):
             return .requestParameters(parameters: try! param.asDictionary(), encoding: URLEncoding.default)
+        case .detailMain(let param):
+            return .requestJSONEncodable(param)
+        case .detailPost(let param):
+            return .requestParameters(parameters: try! param.asDictionary(), encoding: URLEncoding.default)
+        case .post(let param):
+            return .requestJSONEncodable(param)
         }
     }
     
