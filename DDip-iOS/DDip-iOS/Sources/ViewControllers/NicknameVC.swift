@@ -47,7 +47,9 @@ final class NicknameVC: BaseViewController {
     @IBAction func didTappedRegister(_ sender: Any) {
         guard let nickname = textField.text else { return }
         manager.dispatchLogin(nickname: nickname, completion: {
-            print("hi")
+            guard let vc = self.storyboard?.instantiateViewController(withIdentifier: TabBarController.className) as? TabBarController else { return }
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
         })
     }
     

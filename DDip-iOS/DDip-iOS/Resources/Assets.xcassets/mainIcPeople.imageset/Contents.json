@@ -6,9 +6,9 @@
       "scale" : "1x"
     },
     {
-      "filename" : "mainIcPeople@2x.png",
+      "scale" : "2x",
       "idiom" : "universal",
-      "scale" : "2x"
+      "filename" : "mainIcPeople@2x.png"
     },
     {
       "filename" : "mainIcPeople@3x.png",
@@ -17,7 +17,7 @@
     }
   ],
   "info" : {
-    "author" : "xcode",
-    "version" : 1
+    "version" : 1,
+    "author" : "xcode"
   }
 }

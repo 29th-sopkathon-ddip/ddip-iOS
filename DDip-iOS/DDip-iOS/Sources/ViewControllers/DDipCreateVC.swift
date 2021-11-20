@@ -26,6 +26,7 @@ class DDipCreateVC: BaseViewController {
     @IBOutlet weak var ddipDetailTextView: UITextView!
     
     @IBOutlet weak var ddipPostButton: UIButton!
+    @IBOutlet weak var addDdipImageButton: UIButton!
     
     var focusTextFieldBottom: CGFloat = 0.0
     var focusTextViewBottom: CGFloat = 0.0
@@ -33,6 +34,8 @@ class DDipCreateVC: BaseViewController {
     var ddipCount: Int = 0
     
     let detailTextViewPlaceholder = "띱 한마디 작성하기"
+    
+    let manager = MainManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,6 +82,33 @@ class DDipCreateVC: BaseViewController {
     @IBAction func touchUpPlusButton(_ sender: Any) {
         ddipCount += 1
         ddipCountLabel.text = "\(ddipCount)명"
+    }
+    
+    @IBAction func touchUpDismiss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func touchUpRegister(_ sender: Any) {
+        print("register")
+        guard let title = ddipTitleTextField.text,
+              let location = ddipPalceTextField.text,
+              let time = ddipTimeTextField.text,
+              let description = ddipDetailTextView.text
+        else { return }
+        manager.dispatchPost(UserDefaultStorage.userId, title, location, time, 3, description, "", completion: {
+            self.dismiss(animated: true, completion: nil)
+        })
+    }
+    @IBAction func touchUpImageAddButton(_ sender: Any) {
+        var photoConfiguration = PHPickerConfiguration()
+        photoConfiguration.filter = .images
+        photoConfiguration.selectionLimit = 1
+        
+        let picker = PHPickerViewController(configuration: photoConfiguration)
+        
+        picker.delegate = self
+        
+        self.present(picker, animated: true, completion: nil)
     }
 }
 
@@ -142,6 +172,22 @@ extension DDipCreateVC: UITextFieldDelegate {
             ddipPostButton.backgroundColor = UIColor.unselectedButton
         } else {
             ddipPostButton.backgroundColor = UIColor.main
+        }
+    }
+}
+
+extension DDipCreateVC: PHPickerViewControllerDelegate {
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        picker.dismiss(animated: true)
+        let itemProvider = results.first?.itemProvider
+        if let itemProvider = itemProvider, itemProvider.canLoadObject(ofClass: UIImage.self) {
+            itemProvider.loadObject(ofClass: UIImage.self) { (image, error) in
+                DispatchQueue.main.async {
+                    //                    self.ddipImageView.image = UIImage(named: "uploadImg")
+                    self.ddipImageView.image = image as? UIImage
+                    self.addDdipImageButton.isHidden = true
+                }
+            }
         }
     }
 }

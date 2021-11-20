@@ -34,7 +34,7 @@ final class DDipHistoryVC: BaseViewController {
     // MARK: - Properties
     
     private let colors: [UIColor] = [.main, .sub3, .sub2, .sub1]
-    private let items: [String] = ["텀블러!", "아이셔 한박스!", "상추 세봉지!", "피자 한조각!"]
+    private let items: [String] = ["허니갈릭!", "아이셔 한박스!", "상추 세봉지!", "피자 한조각!"]
     
     // MARK: - View Life Cycle
 

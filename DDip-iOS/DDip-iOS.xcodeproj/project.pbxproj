@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0801A612F0B1CE0BB4A1E08B /* Pods_DDip_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA0F3BE6B828028E83A654E /* Pods_DDip_iOS.framework */; };
+		19A4D9D827497E3E00483056 /* DDipDetailTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A4D9D627497E3E00483056 /* DDipDetailTVCell.swift */; };
+		19A4D9D927497E3E00483056 /* DDipDetailTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A4D9D727497E3E00483056 /* DDipDetailTVCell.xib */; };
+		19A4D9DC27497F1D00483056 /* DDipPersonTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A4D9DA27497F1D00483056 /* DDipPersonTVCell.swift */; };
+		19A4D9DD27497F1D00483056 /* DDipPersonTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A4D9DB27497F1D00483056 /* DDipPersonTVCell.xib */; };
+		19A4D9E027498A4700483056 /* DDipDescriptionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A4D9DE27498A4700483056 /* DDipDescriptionTVCell.swift */; };
+		19A4D9E127498A4700483056 /* DDipDescriptionTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A4D9DF27498A4700483056 /* DDipDescriptionTVCell.xib */; };
 		EDE08D6827492E090057A015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08D6727492E090057A015 /* AppDelegate.swift */; };
 		EDE08D6A27492E090057A015 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08D6927492E090057A015 /* SceneDelegate.swift */; };
 		EDE08D7127492E0B0057A015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE08D7027492E0B0057A015 /* Assets.xcassets */; };
@@ -56,9 +62,16 @@
 		EDE08E0827499ED40057A015 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E0727499ED40057A015 /* PostResponse.swift */; };
 		EDE08E0A2749A0DD0057A015 /* PostContentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E092749A0DD0057A015 /* PostContentRequest.swift */; };
 		EDE08E0C2749A2440057A015 /* PostContentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E0B2749A2440057A015 /* PostContentResponse.swift */; };
+		EDE08E0E2749B77F0057A015 /* MakeAlert+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08E0D2749B77F0057A015 /* MakeAlert+UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19A4D9D627497E3E00483056 /* DDipDetailTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDipDetailTVCell.swift; sourceTree = "<group>"; };
+		19A4D9D727497E3E00483056 /* DDipDetailTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DDipDetailTVCell.xib; sourceTree = "<group>"; };
+		19A4D9DA27497F1D00483056 /* DDipPersonTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDipPersonTVCell.swift; sourceTree = "<group>"; };
+		19A4D9DB27497F1D00483056 /* DDipPersonTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DDipPersonTVCell.xib; sourceTree = "<group>"; };
+		19A4D9DE27498A4700483056 /* DDipDescriptionTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDipDescriptionTVCell.swift; sourceTree = "<group>"; };
+		19A4D9DF27498A4700483056 /* DDipDescriptionTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DDipDescriptionTVCell.xib; sourceTree = "<group>"; };
 		51475EAB94EFB6F010216D4C /* Pods-DDip-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDip-iOS.release.xcconfig"; path = "Target Support Files/Pods-DDip-iOS/Pods-DDip-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		82A55B7A3436D9F56C5CE391 /* Pods-DDip-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDip-iOS.debug.xcconfig"; path = "Target Support Files/Pods-DDip-iOS/Pods-DDip-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BEA0F3BE6B828028E83A654E /* Pods_DDip_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDip_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +125,7 @@
 		EDE08E0727499ED40057A015 /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
 		EDE08E092749A0DD0057A015 /* PostContentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentRequest.swift; sourceTree = "<group>"; };
 		EDE08E0B2749A2440057A015 /* PostContentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentResponse.swift; sourceTree = "<group>"; };
+		EDE08E0D2749B77F0057A015 /* MakeAlert+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MakeAlert+UIViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +247,9 @@
 				EDE08DDC274969A80057A015 /* CardCVC.swift */,
 				EDE08DE227497C0E0057A015 /* HistoryHeaderTVC.swift */,
 				EDE08DE427497C560057A015 /* HistoryContentTVC.swift */,
+				19A4D9D627497E3E00483056 /* DDipDetailTVCell.swift */,
+				19A4D9DE27498A4700483056 /* DDipDescriptionTVCell.swift */,
+				19A4D9DA27497F1D00483056 /* DDipPersonTVCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -310,6 +327,9 @@
 		EDE08D8727492E9E0057A015 /* Xib */ = {
 			isa = PBXGroup;
 			children = (
+				19A4D9DF27498A4700483056 /* DDipDescriptionTVCell.xib */,
+				19A4D9D727497E3E00483056 /* DDipDetailTVCell.xib */,
+				19A4D9DB27497F1D00483056 /* DDipPersonTVCell.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -326,6 +346,7 @@
 		EDE08D8927492EAA0057A015 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				EDE08E0D2749B77F0057A015 /* MakeAlert+UIViewController.swift */,
 				EDE08D98274933840057A015 /* ClassName+ViewController.swift */,
 			);
 			path = Util;
@@ -431,10 +452,13 @@
 			files = (
 				EDE08D8C27492F010057A015 /* DDipMain.storyboard in Resources */,
 				EDE08DD727494DB50057A015 /* GmarketSansBold.otf in Resources */,
+				19A4D9D927497E3E00483056 /* DDipDetailTVCell.xib in Resources */,
 				EDE08DD527494DB50057A015 /* GmarketSansMedium.otf in Resources */,
 				EDE08DD627494DB50057A015 /* GmarketSansLight.otf in Resources */,
 				EDE08D7427492E0B0057A015 /* LaunchScreen.storyboard in Resources */,
+				19A4D9E127498A4700483056 /* DDipDescriptionTVCell.xib in Resources */,
 				EDE08D7127492E0B0057A015 /* Assets.xcassets in Resources */,
+				19A4D9DD27497F1D00483056 /* DDipPersonTVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,12 +527,14 @@
 				EDE08DE527497C560057A015 /* HistoryContentTVC.swift in Sources */,
 				EDE08D6827492E090057A015 /* AppDelegate.swift in Sources */,
 				EDE08DE327497C0E0057A015 /* HistoryHeaderTVC.swift in Sources */,
+				19A4D9D827497E3E00483056 /* DDipDetailTVCell.swift in Sources */,
 				EDE08D9D274933E00057A015 /* UIViewController+.swift in Sources */,
 				EDE08DFC274994AF0057A015 /* MainPostResponse.swift in Sources */,
 				EDE08DFA274994700057A015 /* MainPostRequest.swift in Sources */,
 				EDE08DA8274934F30057A015 /* FontLiteral.swift in Sources */,
 				EDE08DA1274934220057A015 /* Encodable+.swift in Sources */,
 				EDE08DA62749349A0057A015 /* BaseViewController.swift in Sources */,
+				19A4D9E027498A4700483056 /* DDipDescriptionTVCell.swift in Sources */,
 				EDE08D99274933840057A015 /* ClassName+ViewController.swift in Sources */,
 				EDE08DF627498BF70057A015 /* MainResponse.swift in Sources */,
 				EDE08D97274933610057A015 /* UICollectionViewRegisterable.swift in Sources */,
@@ -517,6 +543,7 @@
 				EDE08DE9274988050057A015 /* GeneralAPI.swift in Sources */,
 				EDE08D95274933520057A015 /* UITableViewRegisterable.swift in Sources */,
 				EDE08D9F274933F90057A015 /* UIScreen+.swift in Sources */,
+				EDE08E0E2749B77F0057A015 /* MakeAlert+UIViewController.swift in Sources */,
 				EDE08DED2749882E0057A015 /* UserData.swift in Sources */,
 				EDE08E0027499AC90057A015 /* LoginRequest.swift in Sources */,
 				EDE08DFE27499AA70057A015 /* LoginService.swift in Sources */,
@@ -529,6 +556,7 @@
 				EDE08E0427499B640057A015 /* LoginManager.swift in Sources */,
 				EDE08D6A27492E090057A015 /* SceneDelegate.swift in Sources */,
 				EDE08D9227492FE50057A015 /* DDipCreateVC.swift in Sources */,
+				19A4D9DC27497F1D00483056 /* DDipPersonTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

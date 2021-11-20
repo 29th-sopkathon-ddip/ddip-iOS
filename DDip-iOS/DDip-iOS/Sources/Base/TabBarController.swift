@@ -26,16 +26,16 @@ class TabBarController: BaseViewController {
     }
     private let listButton = UIButton().then {
         $0.tag = 0
-        $0.backgroundColor = .blue
+        $0.setImage(UIImage(named: "navigationHomeSelected"), for: .normal)
         $0.addTarget(self, action: #selector(didTappedTab(sender:)), for: .touchUpInside)
     }
     private let historyButton = UIButton().then {
         $0.tag = 1
-        $0.backgroundColor = .blue
+        $0.setImage(UIImage(named: "navigationListUnselected"), for: .normal)
         $0.addTarget(self, action: #selector(didTappedTab(sender:)), for: .touchUpInside)
     }
     private let createButton = UIButton().then {
-        $0.backgroundColor = .blue
+        $0.setImage(UIImage(named: "navigationIcPlus"), for: .normal)
         $0.addTarget(self, action: #selector(didTappedCreate), for: .touchUpInside)
     }
     
@@ -44,8 +44,9 @@ class TabBarController: BaseViewController {
     private var selectedIndex: Int = 0
     private var previousIndex: Int = 0
     private var viewControllers = [UIViewController]()
+    private var isClicked = true
     
-    static let listVC = UIStoryboard(name: "DDipMain", bundle: nil).instantiateViewController(withIdentifier: DDipListVC.className)
+    static let listVC = UIStoryboard(name: "DDipMain", bundle: nil).instantiateViewController(withIdentifier: "ListNavi")
     static let historyVC = UIStoryboard(name: "DDipMain", bundle: nil).instantiateViewController(withIdentifier: DDipHistoryVC.className)
     static let createVC = UIStoryboard(name: "DDipMain", bundle: nil).instantiateViewController(withIdentifier: DDipCreateVC.className)
 
@@ -54,6 +55,10 @@ class TabBarController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabbar()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(hideTabbar), name: NSNotification.Name(rawValue: "hidden"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showTabbar), name: NSNotification.Name(rawValue: "show"), object: nil)
+        
     }
     
     // MARK: - Override Methods
@@ -96,6 +101,16 @@ class TabBarController: BaseViewController {
         didTappedTab(sender: listButton)
     }
     
+    @objc
+    private func hideTabbar() {
+        tabbar.isHidden = true
+    }
+    
+    @objc
+    private func showTabbar() {
+        tabbar.isHidden = false
+    }
+    
     // MARK: - Selector
     
     @objc
@@ -105,9 +120,24 @@ class TabBarController: BaseViewController {
         
         if previousIndex == 0 {
             historyButton.isSelected = false
+            listButton.isSelected = true
+            
         } else {
             listButton.isSelected = false
+            historyButton.isSelected = true
+            
         }
+        
+        if isClicked {
+            historyButton.setImage(UIImage(named: "navigationListUnselected"), for: .normal)
+            listButton.setImage(UIImage(named: "navigationHomeSelected"), for: .normal)
+            
+        } else {
+            historyButton.setImage(UIImage(named: "navigationListSelected"), for: .normal)
+            listButton.setImage(UIImage(named: "navigationHomeUnselected"), for: .normal)
+        }
+        isClicked.toggle()
+        
         let previousVC = viewControllers[previousIndex]
         
         previousVC.willMove(toParent: nil)

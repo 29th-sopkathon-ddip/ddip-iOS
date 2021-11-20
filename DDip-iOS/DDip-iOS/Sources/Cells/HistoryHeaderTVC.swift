@@ -28,10 +28,10 @@ final class HistoryHeaderTVC: UITableViewCell, UITableViewRegisterable {
         $0.textColor = .white
     }
     private let ddipImage = UIImageView().then {
-        $0.backgroundColor = .yellow
+        $0.image = UIImage(named: "icLogo")
     }
     private let handImage = UIImageView().then {
-        $0.backgroundColor = .gray
+        $0.image = UIImage(named: "recordImg")
     }
 
     // MARK: - Initializer
@@ -57,8 +57,8 @@ final class HistoryHeaderTVC: UITableViewCell, UITableViewRegisterable {
         }
         
         ddipImage.snp.makeConstraints {
-            $0.bottom.equalTo(countLabel.snp.bottom)
-            $0.leading.equalTo(countLabel.snp.trailing).offset(20)
+            $0.bottom.equalTo(countLabel.snp.bottom).offset(-5)
+            $0.leading.equalTo(countLabel.snp.trailing).offset(10)
             $0.width.equalTo(35)
             $0.height.equalTo(42)
         }

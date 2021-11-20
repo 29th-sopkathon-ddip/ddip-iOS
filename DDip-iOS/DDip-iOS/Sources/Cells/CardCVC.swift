@@ -24,8 +24,7 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
         $0.layer.cornerRadius = 22
         $0.layer.masksToBounds = true
     }
-    private let imageButton = UIButton().then {
-        $0.backgroundColor = .main.withAlphaComponent(0.9)
+    let imageButton = UIButton().then {
         $0.layer.cornerRadius = 22
         $0.addTarget(self, action: #selector(didTappedDetail), for: .touchUpInside)
     }
@@ -39,7 +38,7 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
         $0.numberOfLines = 0
     }
     private let personIcon = UIImageView().then {
-        $0.backgroundColor = .yellow
+        $0.image = UIImage(named: "mainIcPeople")
     }
     var ddipCountLabel = UILabel().then {
         $0.font = .gmarketBoldFont(ofSize: 18)
@@ -124,7 +123,7 @@ final class CardCVC: UICollectionViewCell, UICollectionViewRegisterable {
     
     @objc
     private func didTappedDetail() {
-        
+        delegate?.didTappedDetail(index: index)
     }
     
     @objc
