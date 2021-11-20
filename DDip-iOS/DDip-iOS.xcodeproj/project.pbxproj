@@ -29,6 +29,9 @@
 		EDE08DAA274934FA0057A015 /* ColorLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DA9274934FA0057A015 /* ColorLiteral.swift */; };
 		EDE08DAC274935060057A015 /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DAB274935060057A015 /* ImageLiteral.swift */; };
 		EDE08DD0274944FD0057A015 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE08DCF274944FD0057A015 /* TabbarController.swift */; };
+		EDE08DD527494DB50057A015 /* GmarketSansMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDE08DD227494DB50057A015 /* GmarketSansMedium.otf */; };
+		EDE08DD627494DB50057A015 /* GmarketSansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDE08DD327494DB50057A015 /* GmarketSansLight.otf */; };
+		EDE08DD727494DB50057A015 /* GmarketSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDE08DD427494DB50057A015 /* GmarketSansBold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		EDE08DA9274934FA0057A015 /* ColorLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLiteral.swift; sourceTree = "<group>"; };
 		EDE08DAB274935060057A015 /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
 		EDE08DCF274944FD0057A015 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		EDE08DD227494DB50057A015 /* GmarketSansMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansMedium.otf; sourceTree = "<group>"; };
+		EDE08DD327494DB50057A015 /* GmarketSansLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansLight.otf; sourceTree = "<group>"; };
+		EDE08DD427494DB50057A015 /* GmarketSansBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansBold.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 		EDE08D7B27492E3D0057A015 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EDE08DD127494DA10057A015 /* Fonts */,
 				EDE08D8627492E940057A015 /* Views */,
 				EDE08D7027492E0B0057A015 /* Assets.xcassets */,
 				EDE08D7527492E0B0057A015 /* Info.plist */,
@@ -272,6 +279,16 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		EDE08DD127494DA10057A015 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EDE08DD427494DB50057A015 /* GmarketSansBold.otf */,
+				EDE08DD327494DB50057A015 /* GmarketSansLight.otf */,
+				EDE08DD227494DB50057A015 /* GmarketSansMedium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -333,6 +350,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE08D8C27492F010057A015 /* DDipMain.storyboard in Resources */,
+				EDE08DD727494DB50057A015 /* GmarketSansBold.otf in Resources */,
+				EDE08DD527494DB50057A015 /* GmarketSansMedium.otf in Resources */,
+				EDE08DD627494DB50057A015 /* GmarketSansLight.otf in Resources */,
 				EDE08D7427492E0B0057A015 /* LaunchScreen.storyboard in Resources */,
 				EDE08D7127492E0B0057A015 /* Assets.xcassets in Resources */,
 			);
